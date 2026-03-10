@@ -1,0 +1,41 @@
+{
+    "name": "psc-acme/worker-product",
+    "description": "Package worker-product for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\WorkerProduct\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "doctrine/dbal": "^4.0",
+        "league/flysystem": "^3.0",
+        "symfony/event-dispatcher": "^7.0",
+        "symfony/uid": "^7.0",
+        "doctrine/orm": "^3.0",
+        "symfony/http-kernel": "^6.2"
+    },
+    "require-dev": {
+        "webforge/object-asserter": "^2.0.0",
+        "rector/rector": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
